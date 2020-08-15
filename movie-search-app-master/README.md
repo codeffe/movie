@@ -8,9 +8,6 @@ HTML/CSS/Javascript/JQuery
 # Screenshots
 ![Screenshot](images/movie-app-screenshot.png)
 
-# Live Repo
-Live Repo: https://b-chang93.github.io/movie-search-app/
-
 # Features
 - Search for movies based on title 
 - Click to open modal with information about movie and movie trailer
