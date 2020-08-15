@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Search Info About Your Favorite Movies</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movie Search App</h1>
+    <form action="#" class="js-search-form" aria-live="assertive">
+      <fieldset>
+        <legend>Search Movie Query</legend>
+        <select hidden class="search-year">
+          <option val="year">year</option>
+        </select>
+        <select aria-label="movie-or-series" class="search-type">
+          <option aria-label="movie" val="movie">movie</option>
+          <option aria-label="series" val="series">series</option>
+        </select>
+        <input aria-label="search-input" type="text" class="js-query" placeholder="Movie Title">
+        <label for="query"></label>
+        <button id="search-movie-button" type="submit">Search</button>
+      </fieldset>
+    </form>
+
+    <div id="results-section">
+      <div id="results-header">
+        <span>Results: <span id="number-related-items"></span></span>
+        <button hidden class="paginate-button" type="submit" id="back-page-button">Back</button>
+        <button hidden class="paginate-button" type="submit" id="next-page-button">Next</button>
+      </div>
+      <div id="landing-page">
+        <h3 class="welcome-message">Welcome to Movie Search App!</h3>
+        <p class="welcome-info">Have a movie you love and want a little more information about? You've come to the right place!</p>
+        <p class="welcome-info-1">Type in a movie name and we'll find you related movies.</p>
+        <p class="welcome-info-2">Next click on <strong>any</strong> movie you're interested in to retrieve more information.</p>
+        <div class="movie-app-img">
+          <img src="images/movie-app-screenshot.png" alt="Example of Movie App">
+        </div>
+      </div>
+  </header>
+
+  <main role="main">
+    <div class="js-search-results" aria-live="assertive"></div>
+    <div id="myModal" class="modal" role="dialog" aria-live="assertive" aria-atomic="true">
+      <div class="modal-content" aria-live="assertive">
+        <span aria-label="Close" class="close">&times;</span>
+        <section class="movie-title-info">
+          <h2 id="movie-title"></h2>
+          <p class="mpaa-rating"></p>
+          <p class="divider">|</p>
+          <p class="movie-genre"></p>
+          <p class="divider">|</p>
+          <p class="run-time"></p>
+        </section>
+        <p id="movie-plot"></p>
+        <img class="modal-poster-image" src="" alt="Poster" />
+        <section class="js-youtube-results"></section>
+        <section class="dvd">
+          <p></p>
+        </section>
+        <section class="rating-by-reviewer">
+          <div class="all-ratings"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

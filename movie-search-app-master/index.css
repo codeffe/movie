@@ -1,0 +1,725 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #2a7ab0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset {
+  border: 0;
+  width: 100%;
+  display: block;
+}
+
+legend {
+  display: none;
+}
+
+p {
+  font-size: 12px;
+}
+
+h1 {
+  font-weight:lighter;
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.8;
+  letter-spacing: -0.02em;
+  font-size: 34px;
+  background-color: #94bcd7;
+}
+
+a {
+  display: inline-block;
+  height: 100%;
+}
+
+form {
+  border: 0;
+  background-color: #94bcd7;
+  color: #0c2434;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.js-search-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.js-query {
+  width: 50%;
+}
+
+#search-by-year {
+  display: inline-block;
+  width: 50px;
+}
+
+.js-query, .js-query-year, .search-type, button {
+  height: auto;
+  font-size: 16px;
+  text-align: left;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  background: #fcfcfc;
+  transition: opacity 0.4s;
+  padding: 5px 0;
+}
+
+#results-section {
+  width: 100%;
+  background-color: #94bcd7;
+  font-weight:lighter;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+#landing-page {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: #16405b;
+  padding: 20px;
+  color: #94bcd7;
+}
+
+.welcome-message {
+  position: absolute;
+  font-size: 18px;
+  max-width: 100%;
+  top: 5%;
+}
+
+.welcome-info {
+  position: absolute;
+  font-size: 10px;
+  width: 90%;
+  top: 12%;
+}
+
+.welcome-info-1 {
+  position: absolute;
+  font-size: 10px;
+  width: 40%;
+  top: 20%;
+}
+
+.welcome-info-2 {
+  position: absolute;
+  font-size: 10px;
+  width: 45%;
+  top: 20%;
+  left: 50%;
+}
+
+.movie-app-img {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  top: 35%;
+  left: 5%;
+}
+
+.movie-app-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.js-search-results {
+  width: 100%;
+}
+
+.poster-thumbnail {
+  width: 100%;
+}
+
+#number-related-items {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#results-header {
+  background-color: #94bcd7;
+  color: #0c2434;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#back-page-button, #next-page-button {
+  padding: 6px;
+  margin: 5px 0;
+}
+
+#back-page-button {
+  margin-left: 20px;
+}
+
+#error-container {
+  width:100%;
+  height:400px;
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+  margin-top: 20px;
+}
+
+.poster-thumbnail {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 260px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*START OF CSS FOR ANYTHING INSIDE MODAL */
+
+.hidden {
+  display: none;
+}
+
+.isClosed {
+  display: none;
+}
+
+.modal-content {
+  width: 100%;
+  height: 70%;
+}
+
+#movie-text-details {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  bottom: 20px;
+}
+
+.modal-movie-details {
+  width: 90%;
+  height: 100%;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#movie-title {
+  font-size: 16px;
+  width: 80%;
+  max-height: 20%;
+}
+
+#movie-year {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.movie-genre {
+  font-size: 8px;
+  display: inline;
+}
+
+.mpaa-rating {
+  height: 5%;
+  display: inline;
+  font-size: 8px;
+}
+
+.divider {
+  font-size: 8px;
+  display: inline;
+}
+
+.run-time {
+  font-size: 8px;
+  display: inline;
+}
+
+#movie-plot {
+  width: 60%;
+  float: right;
+  margin-top: 5%;
+}
+
+.modal-poster-image {
+  box-shadow: 0 15px 15px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+  width: 30%;
+  margin: 10px 0;
+}
+
+
+.dvd {
+  width: 45%;
+}
+
+.movie-title-when-no-poster {
+  position: relative;
+  width: 90%;
+  top: 10%;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  font-weight: normal;
+}
+
+.error-container {
+  width: 100%;
+}
+
+#no-movie-result {
+  display: block;
+  margin: 150px auto;
+}
+
+.rating-sys-info {
+  width: 60%;
+}
+
+.movie-ratings-by-source {
+  font-size: 14px;
+  margin-top: 34%;
+  width: 90%;
+}
+
+.all-ratings {
+  width: 80%;
+}
+
+.rating-by-reviewer {
+  margin: 5px 0;
+  width: 40%;
+}
+
+.js-youtube-results {
+  width: 55%;
+  height: 35%;
+  float: right;
+}
+
+#movie-thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.poster-thumbnail:focus {
+  border: 3px solid red;
+}
+
+/* TESTING MODAL ANIMATIONS*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 30% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 60%;
+    color: white;
+    background-color: #2a7ab0
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* START OF MEDIA QUERIES */
+@media screen and (min-width: 370px) {
+  fieldset {
+    width: 80%
+  }
+
+  .js-query {
+    width: 45%;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 65%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  fieldset {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .poster-thumbnail {
+    width: 85%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+  .js-query {
+    width: 60%;
+  }
+
+  .modal-content {
+    margin: 20% auto;
+  }
+
+  #movie-year {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .movie-genre {
+    font-size: 12px;
+  }
+
+  .mpaa-rating {
+    font-size: 12px;
+  }
+
+  .divider {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .run-time {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    margin: 5% auto;
+    width: 75%;
+    height: 50%;
+  }
+
+  .poster-thumbnail {
+    width: 50%;
+    float: left;
+  }
+
+  .movie-genre {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  p, #movie-plot {
+    font-size: 18px;
+  }
+
+  #movie-title {
+    font-size: 22px;
+  }
+
+  .movie-genre {
+    font-size: 12px;
+  }
+
+  .mpaa-rating {
+    font-size: 12px;
+  }
+
+  .divider {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .run-time {
+    font-size: 12px;
+  }
+
+  .welcome-message, .welcome-info {
+    position: static;
+    text-align: center;
+  }
+
+  .welcome-message {
+    font-size: 20px;
+  }
+
+  .welcome-info {
+    font-size: 14px;
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .welcome-info-1 {
+    font-size: 14px;
+    width: 27%;
+    left: 20%;
+  }
+
+  .welcome-info-2 {
+    font-size: 14px;
+    width: 30%;
+  }
+
+  .movie-app-img {
+    width: 50%;
+    left: 25%;
+  }
+
+  .movie-app-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  h4 {
+    font-size: px;
+  }
+
+  p, #movie-plot {
+    font-size: 20px;
+  }
+
+  #movie-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  fieldset {
+    width: 35%;
+  }
+
+  h1 {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .js-query {
+    width: 50%;
+  }
+
+  .modal-content {
+    margin: 20% auto;
+  }
+
+  #movie-year {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .movie-genre {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 800px;
+    height: 650px;
+  }
+
+  .js-youtube-results {
+    width: 50%;
+    margin-right: 5%;
+  }
+
+  .modal-poster-image {
+    width: 22%;
+  }
+
+  .js-search-form {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  #results-section {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .poster-thumbnail {
+    width: 32%;
+    float: left;
+  }
+
+  .js-search-results {
+    width: 100%;
+    margin: auto;
+  }
+
+  #error-container {
+    width:100%;
+    height:400px;
+    border: 1px solid black;
+  }
+
+  #error-card {
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+  }
+
+  #landing-page {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #16405b;
+    padding: 20px;
+    color: #94bcd7;
+  }
+
+  .welcome-message {
+    position: absolute;
+    font-size: 30px;
+    max-width: 50%;
+    top: 5%;
+  }
+
+  .welcome-info {
+    position: absolute;
+    font-size: 20px;
+    width: 45%;
+    top: 15%;
+  }
+
+  .welcome-info-1 {
+    position: absolute;
+    font-size: 20px;
+    width: 45%;
+    top: 35%;
+    left: 3%
+  }
+
+  .welcome-info-2 {
+    position: absolute;
+    font-size: 20px;
+    width: 45%;
+    top: 50%;
+    left: 3%;
+  }
+
+  .movie-app-img {
+    position: static;
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  p {
+    font-size: 22px;
+  }
+
+  form {
+    width: 1000px;
+  }
+
+  form {
+    width: 1000px;
+  }
+
+  .modal-content {
+    width: 750px;
+    height: 70%;
+  }
+
+  #results-section {
+    width: 1000px;
+  }
+
+  .poster-thumbnail {
+    width: 32.33%;
+    margin: 5px;
+  }
+
+  .js-search-results {
+    width: 1000px;
+  }
+
+  .modal-content {
+    width: 75%;
+  }
+
+  .modal-poster-image {
+    width: 25%;
+  }
+
+  #movie-title {
+    font-size: 30px;
+  }
+
+  #movie-plot {
+    width: 70%;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    width: 700px;
+    height: 550px;
+  }
+
+  .modal-poster-image {
+    width: 22%;
+  }
+}
